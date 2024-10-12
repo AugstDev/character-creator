@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+h1{
+    font-size: 3rem;
+    width: 660px;
+    text-align: left;
+
+}
+
+.canvas{
+    width: 256px;
+    height: 256px;
+    background-color: lightgray;
+    
+    img{
+        position: absolute;
+        image-rendering: pixelated;
+    }
+}
+
+.tab{
+    display: flex;
+    padding: 40px;
+    gap: 20px;
+
+    button{
+        position: absolute;
+        padding: 5px;
+        margin: 0px;
+        background: darkgrey;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 4;
+    
+        
+    }
+
+    button:hover{
+        color: white;
+        background:darkred;
+    }
+}
+
+
+
+h3{
+    font-size: 2rem;
+}
+
+.filter{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .category{
+        display: flex;
+
+        span:hover{
+            color: #2424e4;
+            background-color: rgb(186, 196, 253);
+            border: 2px solid #2424e4;
+            cursor: pointer;
+        }
+
+        span{
+            color: #5151e0;
+            width: fit-content;
+            text-align: center;
+            padding: 5px 20px;
+            margin: 2px;
+            border: 2px solid #5151e0;
+            border-radius: 100px;
+        }
+    }
+}
+
+
+
+
+.grid{
+    display: grid;
+    grid-template-rows: repeat(3,150px);
+    grid-template-columns: repeat(3,150px);
+
+    img{
+        width: -webkit-fill-available;
+    }
+}
+
+
+
+@media screen and (max-width: 750px) {
+    h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .tab{
+        padding: 0;
+        padding-top: 20px;
+    }
+    body{
+        padding-top: 30px;
+        overflow:hidden;
+    }
+    .grid {
+        grid-template-columns: repeat(2,100px);
+    }
+
+    span{
+        padding: 2px 5px;
+        font-size: 2vw;
+    }
+
+
+    h3{
+        font-size: 4vw;
+        text-align: left;
+    }
+    .canvas{
+        width: 128px;
+        height: 128px;
+        img{
+            width: 128px;
+            height: 128px;
+        }
+    }
+    .filter{
+        gap: 15px;
+        width: 250px;
+    }
+
+
+}

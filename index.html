@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Generator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div class="title">
+        <h1>CHARACTER GENERATOR</h1>
+    </div>
+
+    <div class="tab">
+        <button id="download-btn" onclick="exportCharacter()">Download</button>
+        <div class="canvas" id="demo">
+            <img id="backgroundimg" alt="background" src="./assets/img/backgrounds/background1.png">
+            <img id="headimg" alt="head" src="./assets/img/heads/head1.png">
+            <img id="eyeimg" alt="eye" src="./assets/img/eyes/eye1.png">
+            <img id="noseimg" alt="nose" src="./assets/img/noses/nose1.png">
+            <img id="mouthimg" alt="mouth" src="./assets/img/mouths/mouth1.png">
+            <img id="hairimg" alt="hair" src="./assets/img/hairs/hair1.png">
+            <img id="shirtimg" alt="shirt" src="./assets/img/shirts/shirt1.png">
+        
+        
+        
+        </div>
+
+        <div class="tab-menu">
+            <h3>Customize Look</h3>
+            <div class="items">
+                <div class="filter">
+                    <div class="category">
+                        <span onclick="ChangeImages('hair')" id="hair">Hair</span>
+                        <span onclick="ChangeImages('head')" id="head">Head</span>
+                        <span onclick="ChangeImages('eye')" id="eyes">Eyes</span>
+                        <span onclick="ChangeImages('nose')" id="nose">Nose</span>
+                    </div>
+                    <div class="category">
+                        <span onclick="ChangeImages('mouth')" id="mouth">Mouth</span>
+                        <span onclick="ChangeImages('shirt')" id="shirt">Shirt</span>
+                        <span onclick="ChangeImages('background')" id="background">Background</span>
+                    </div>
+
+                    <div class="imagelist">
+                        <div class="grid" id="gridImages" filter="hair">
+                            <img alt="hair" src="./assets/img/hairs/hair1.png">
+                            <img alt="hair" src="./assets/img/hairs/hair2.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="canvas" width="1028" height="1028" style="display: none;"></canvas>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
