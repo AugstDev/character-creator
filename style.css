@@ -100,22 +100,23 @@ h3{
     grid-template-rows: repeat(3,150px);
     grid-template-columns: repeat(3,150px);
 
-    img{
-        width: -webkit-fill-available;
-        background-color: #ccc;
-        border: 5px dashed black;
-        margin: 5px;
-    }
+}
 
-    p{
-        margin: 50px;
-        font-weight: bolder;
-        height: min-content;
-        width: max-content;
-        color: hotpink;
-        border: 2px dashed hotpink;
-        padding: 10px;
-    }
+.grid p{
+    margin: 50px;
+    font-weight: bolder;
+    height: min-content;
+    width: max-content;
+    color: hotpink;
+    border: 2px dashed hotpink;
+    padding: 10px;
+}
+
+.grid img{
+    width: -webkit-fill-available;
+    background-color: #ccc;
+    border: 5px dashed black;
+    margin: 5px;
 }
 
 
