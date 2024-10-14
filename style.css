@@ -163,3 +163,22 @@ h3{
 
 
 }
+
+@media screen and (max-width: 500px) {
+
+    .canvas{
+        width: 256px;
+        height: 256px;
+        img{
+            width: 256px;
+            height: 256px;
+        }
+    }
+    .tab{
+        flex-direction: column;
+    }
+    
+    .grid {
+        grid-template-columns: repeat(3,100px);
+    }
+}
